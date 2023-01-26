@@ -1,0 +1,40 @@
+<div fxLayout="row" fxLayoutAlign="center center" style="margin-top: 50px;">
+    <mat-card class="card-width" fxLayout="row" fxLayoutAlign="center center">
+        <form class="example-form" [formGroup]="registerForm">
+            <h1>Find a job & grow your career</h1>
+            <mat-form-field class="example-full-width">
+                <mat-label>Full Name</mat-label>
+                <input matInput formControlName="">
+            </mat-form-field><br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Email Id</mat-label>
+                <input matInput formControlName="">
+            </mat-form-field><br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="">
+            </mat-form-field><br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Mobile Number</mat-label>
+                <input matInput formControlName="">
+            </mat-form-field><br>
+            <h4>Work Status</h4>
+            <mat-form-field appearance="fill">
+                <mat-label>Status</mat-label>
+                <select matNativeControl required formControlName="">
+                    <option value="select">select</option>
+                    <option value="Experienced">I'm Experienced</option>
+                    <option value="Fresher">I'm a Fresher</option>
+                </select>
+            </mat-form-field><br>
+            <mat-checkbox formControlName="">Send me important updates on WhatsApp</mat-checkbox><br>
+            <div class="terms">
+                <p>By clicking Register, you agree to the Terms and Conditions & Privacy Policy of JobAlert.com</p>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <button style="color:white;font-size:20px;background-color:#3F51B5;" mat-stroked-button
+                    routerLink="../register" (click)="OnSubmit">Register</button>
+            </div>
+        </form>
+    </mat-card>
+</div>
