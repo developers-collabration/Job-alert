@@ -1,0 +1,33 @@
+    <mat-card>
+        <div class="container">
+            <div fxLayout="row">
+                <div fxFlex="8">
+                    <div class="profile-icons">
+                        <span class="material-symbols-outlined"><mat-icon class="profile">account_circle</mat-icon></span>
+                        <mat-icon class="camera">camera_enhance</mat-icon>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span>vamshi</span>
+                    <span style="margin-top: 20px; margin-left: 2px; color: #ffff;" ><mat-icon (click)="openDialog(myDialog)" >edit</mat-icon></span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+    <ng-template #myDialog >
+        <h2 mat-dialog-title>Install Angular</h2>
+        <div mat-dialog-content>
+            <p>What's your favorite animal?</p>
+            <mat-form-field appearance="fill">
+              <mat-label>Favorite Animal</mat-label>
+              <input matInput >
+            </mat-form-field>
+          </div>
+        <mat-dialog-actions align="end">
+          <button mat-button mat-dialog-close>Cancel</button>
+          <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+        </mat-dialog-actions>
+    </ng-template>
+   

@@ -1,0 +1,19 @@
+mat-card{
+    background-color: #3F51B5;
+}
+.profile {
+    font-size: 50px;
+    height: 50px ;
+    width: 50px;
+}
+.profile-icons{
+    position: relative;
+}
+.camera{
+    position: absolute;
+}
+
+::ng-deep.mat-dialog-container {
+    width: 500px !important;
+    height: 400px !important;
+}

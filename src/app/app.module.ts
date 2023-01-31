@@ -8,12 +8,14 @@ import { NavBarComponent } from './side-nav/nav-bar.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     RegisterComponent,
+    EditProfileComponent,
   ],
   imports: [
     BrowserModule,
